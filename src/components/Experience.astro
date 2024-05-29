@@ -1,0 +1,35 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+{
+    date: "Currently",
+    title: "Non-Invasive Glucose Measurement",
+    description:
+        "I am researching and designing a model based on a pulse oximeter that uses visible and invisible signals to estimate blood glucose levels, thereby enabling the detection of diabetes or related diseases.",
+    link: "https://github.com/SShyBB",
+    num: "RESEARCH (LATEST)",
+    img: "/shot2.png",
+    text: "Sensor Used"
+},
+{
+    date: "September 2023",
+    title: "Multipurpose Embedded System",
+    description:
+        "I designed a multipurpose embedded system using a Raspberry Pi 4, capable of controlling various components such as an ultrasonic sensor, LED lights, a temperature sensor, and a servo motor. This system leverages a web application that provides a user-friendly interface for managing and automating these devices in everyday scenarios. The development of this project involved multiple programming languages and technologies, including HTML, CSS, JavaScript for the front-end, Python for handling the hardware interactions, PHP for server-side processing, and Linux as the operating system for the Raspberry Pi.",
+    link: "https://github.com/SShyBB",
+    num: "LATEST",
+    img: "/shot1.png",
+    text: "Screenshot of the start menu"
+}
+]
+---
+
+<ol class="relative border-s border-blue-200 ml-3">
+    {
+    EXPERIENCIE.map((experiencie) => (
+    <li class="">
+        <ExperienceItem {...experiencie} />
+    </li>
+    ))
+    }
+</ol>

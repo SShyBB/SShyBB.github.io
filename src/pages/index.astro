@@ -1,0 +1,76 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Badge from '../components/Badge.astro'
+import LinkedInIcon from '../components/icons/Linkedin.astro'
+import SocialPill from '../components/SocialPill.astro'
+import GitHubIcon from '../components/icons/Github.astro'
+import MailIcon from '../components/icons/Mail.astro'
+import Experience from '../components/Experience.astro'
+import SectionContainer from '../components/SectionContainer.astro'
+import Code from '../components/icons/Code.astro'
+import User from '../components/User.astro'
+import About from '../components/About.astro'
+import Skills from '../components/Skills.astro'
+import Pills from '../components/Pills.astro'
+---
+
+<Layout title="Portfolio de Guillermo Ibarra- Desarrollador y programador Python"
+		description="Contratame">
+	<main class="px-4">
+		<SectionContainer class="py-20 pb-24">
+		<img
+        class="rounded-full size-20 mb-4"
+        src="https://avatars.githubusercontent.com/u/170899663?v=4" 
+        alt="selfie"
+		/>
+			<h1 class="text-white text-3xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10" > 
+				Hey, I'm Guillermo <a 
+					href="https://www.linkedin.com/in/guillermo-iv%C3%A1n-shy/" 
+					target="_blank" 
+					rel="noopener" 
+					class="flex justify-center items-center">
+				<Badge>Available for hire</Badge>
+				</a>
+			</h1>
+			<h2 class="text-xl lg:text-2xl text-wrap max-w-90">
+				<span class="text-yellow-200/90">Electronics and Computer Engineer. </span>
+			<span class="text-blue-200/90">Software developer and programmer. Experience in languages such as Python, Matlab, Arduino, C++, GO.</span></h2>	
+			<nav class="flex gap-4 mt-8 flex-wrap">
+				<SocialPill href="https://www.linkedin.com/in/guillermo-iv%C3%A1n-shy/">
+						<LinkedInIcon class="size-4 md:size-6" />
+						LinkedIn
+				</SocialPill>
+				<SocialPill href="https://github.com/SShyBB">
+						<GitHubIcon class="size-4 md:size-6" />
+						Github
+				</SocialPill>
+				<SocialPill href="mailto:ivan.shy2001@gmail.com">
+						<MailIcon class="size-4 md:size-6" />
+						ivan.shy2001@gmail.com
+				</SocialPill>
+				</nav>
+		</SectionContainer>
+		<SectionContainer id="proyects">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<Code class="size-15" />
+				Practical Experience
+			</h2>
+			<Experience />
+		</SectionContainer>
+		<SectionContainer id="about">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<User class="size-15" />
+				About me
+			</h2>
+			<About />
+		</SectionContainer>
+		<SectionContainer id="tech">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<Pills class="size-15" />
+				Skills
+			</h2>
+			<Skills />
+		</SectionContainer>
+		
+	</main>
+</Layout>
